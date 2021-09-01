@@ -8,7 +8,7 @@ jobs:
         steps:
             - checkout
             - run: npm install
-            - run: npm run test
+            - run: npm run test 
 workflows:
     build-and-deploy:
         jobs:
@@ -17,3 +17,4 @@ workflows:
                       branches:
                           only:
                               - main
+                              - alternate
